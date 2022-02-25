@@ -20,7 +20,7 @@ var config = defaults;
 config.ip = camera_ip;
 
 function get_config () {
-	var result = localStorage.getItem('configStorage2');
+	var result = localStorage.getItem('configStorage1');
   if (!result) {
     return config;
   } else {
@@ -29,7 +29,7 @@ function get_config () {
 }
 
 function save_config () {
-	localStorage.setItem('configStorage2', JSON.stringify(config));
+	localStorage.setItem('configStorage1', JSON.stringify(config));
 	console.log(config);
 }
 
