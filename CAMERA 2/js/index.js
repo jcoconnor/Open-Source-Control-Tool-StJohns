@@ -602,10 +602,9 @@ $('body').on('click', '.call_preset', function(e) {
 
 $('body').on('click', '.assign_preset', function(e) {
 	e.preventDefault();
-	var preset = $(this).val();
-	if (preset == 'Auto Pan Left Start Position') {
-		preset = 11;
-	}
+	var title = $(this).val()
+	var preset = $(this).data('preset')
+	// alert("Preset: " + preset + ", Title: " + title);
 	cam_preset(1, preset, 'posset');
 	return false;
 });
