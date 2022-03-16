@@ -474,8 +474,8 @@ function autopan () {
 	var seconds = config.autopaninterval;
 	autopanning = true;
 
-	// preset 11 is the autopan start preset
-	cam_preset(1, 11, 'poscall');
+	// preset 20 is the autopan start preset
+	cam_preset(1, 20, 'poscall');
 
 	// wait 1 second before starting the pan
 	// this should give the camera enough time to pan to start position
@@ -561,8 +561,8 @@ $('body').on('click', '.autopan', function(e) {
 
 	if (autopanning == false) {
 
-		autopan();
-		$(this).addClass('active');
+		// autopan();
+		// $(this).addClass('active');
 
 	} else {
 
